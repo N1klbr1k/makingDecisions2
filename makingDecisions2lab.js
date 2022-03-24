@@ -204,3 +204,30 @@ switch(letterGrade) {
 */
 
 //Code Here
+const hades = [15, 5, 3];
+
+for(let i = 1; i <= 100; i++){
+  
+  let c;
+  for(let j = 0; j < hades.length; j++){
+    if(i%hades[j] === 0){
+      c = hades[j];
+      break;
+    }
+  }
+  switch(c){
+    case(15):
+      console.log('devmountain');
+      break;
+    case(5):
+      console.log('mountain');
+      break;
+    case(3):
+      console.log('dev');
+      break;
+    default:
+      console.log(i);
+
+  }
+
+}

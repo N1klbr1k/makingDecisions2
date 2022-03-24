@@ -29,9 +29,11 @@ var family = ['Tyler', 'Jordan', 'Ryan', 'Alice', 'Ireland'];
 */
 
 //Code Here
-for(let i = 0; i < family.length; i++){
+/*for(let i = 0; i < family.length; i++){
   console.log( family[i]);
-}
+}*/
+console.log('-----------------------------problem 3---------------------------');
+family.forEach( e => console.log(e))
 
 
 
@@ -117,11 +119,15 @@ var listOfNumbers = [1,2,3,4,5,6,7,8,9,10,11,12];
 // Use a for-loop to iterate through 'listOfNumbers', checking to see if each number is divisible by 3. If it is, console.log '{number} is divisible by 3.'
 
 //Code Here
-for(let i = 0; i < listOfNumbers.length; i++){
+/*for(let i = 0; i < listOfNumbers.length; i++){
   if( listOfNumbers[i]%3 === 0){
     console.log(`${listOfNumbers[i]} is divisible by 3.`);
   }
-}
+}*/
+console.log('--------------------------------------------problem8-------------------------------------------')
+listOfNumbers.forEach( numb => numb%3 === 0 ? console.log(`${numb} is divisible by 3.`) : numb )
+
+
 
 ////////// PROBLEM 9 //////////
 // Do not edit the code below.
@@ -204,14 +210,14 @@ switch(letterGrade) {
 */
 
 //Code Here
-const hades = [15, 5, 3];
+const divisibles = [15, 5, 3];
 
 for(let i = 1; i <= 100; i++){
   
   let c;
-  for(let j = 0; j < hades.length; j++){
-    if(i%hades[j] === 0){
-      c = hades[j];
+  for(let j = 0; j < divisibles.length; j++){
+    if(i%divisibles[j] === 0){
+      c = divisibles[j];
       break;
     }
   }

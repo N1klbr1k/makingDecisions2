@@ -106,7 +106,7 @@ let someNum = myFavoriteNumbers[4];
 if( myFavoriteNumbers.length < 7){
   console.log('There are not enough elements in this array');
 } else if( myFavoriteNumbers.length >= 7){
-  let someNum = myFavoriteNumbers[6];
+   someNum = myFavoriteNumbers.splice[6, 0];
 }
 
 
